@@ -26,17 +26,27 @@ class App extends Component {
 
   render() {
     
-    const HomeComponent = () => (<Home accountBalance={this.state.accountBalance}/>);
-    const UserProfileComponent = () => (
-      <UserProfile userName={this.state.currentUser.userName} memberSince={this.state.currentUser.memberSince} />
+    // const homeComponent = () => (
+    //   <Home accountBalance={this.state.accountBalance} /> 
+    // );
+
+    // const userProfileComponent = () => (
+    //   <UserProfile 
+    //     userName={this.state.currentUser.userName} 
+    //     memberSince={this.state.currentUser.memberSince} 
+    //   /> 
+    // );
+
+    const logInComponent = () => (
+      <LogIn user={this.state.currentUser} mockLogIn={this.mockLogIn} />
     );
-    const LogInComponent = () => (<LogIn user={this.state.currentUser} mockLogIn={this.mockLogIn} />);
+
     return (
       <Router>
         <div>       
-          <Route exact path="/" render={HomeComponent}/>
-          <Route exact path="/userProfile" render={UserProfileComponent}/>
-          <Route exact path="/login" render={LogInComponent}/>
+          {/* <Route exact path="/" render={homeComponent} />
+          <Route exact path="/userProfile" render={userProfileComponent} /> */}
+          <Route exact path="/login" render={logInComponent} />
         </div>
       </Router>
     );    

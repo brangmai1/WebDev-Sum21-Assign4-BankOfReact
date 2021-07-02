@@ -31,7 +31,7 @@ class LogIn extends Component {
 
     render() {
         if (this.state.redirect) {
-            return (<Redirect to="/userProfile"/>)
+            return ( <Redirect to="/userProfile" /> )
         }
 
         return (
@@ -39,7 +39,11 @@ class LogIn extends Component {
                 <form onSubmit={this.handleSubmit}>
                     <div>
                         <label htmlFor="userName">User Name</label>
-                        <input type="text" name="userName" onChange={this.handleChange} value={this.state.user.userName} />
+                        <input 
+                            type="text" name="userName" 
+                            onChange={this.handleChange} 
+                            value={this.state.user.userName} 
+                        />
                     </div>
                     <div>
                         <label htmlFor="password">Password</label>

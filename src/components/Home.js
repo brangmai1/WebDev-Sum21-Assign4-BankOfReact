@@ -6,15 +6,17 @@ class Home extends Component {
     render() {
         return(
             <div>
-                <img src="https://letstalkpayments.com/wp-content/uploads/2016/04/Bank.png" alt="bank"/>
+                {/* <img src="https://letstalkpayments.com/wp-content/uploads/2016/04/Bank.png" alt="bank" /> */}
+                <img src="bankPic.png" alt="Bank" />
                 <h1>Bank of React</h1>
 
                 <Link to="/userProfile">User Profile</Link> 
                 
-                <AccountBalance accountBalance={this.props.accountBalance}/>
+                <AccountBalance accountBalance={this.props.accountBalance} />
             </div>
         );
     }
 }
 
 export default Home;
+
