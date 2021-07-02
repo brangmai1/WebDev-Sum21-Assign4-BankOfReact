@@ -1,8 +1,9 @@
 
 // Login.js
 
-import React, { Component } from 'react'
-import { Redirect } from 'react-router-dom'
+import React, { Component } from 'react';
+import { Redirect } from 'react-router-dom';
+import {Link} from 'react-router-dom';
 
 class LogIn extends Component {
     constructor() {
@@ -51,6 +52,9 @@ class LogIn extends Component {
                         <input type="password" name="password" />
                     </div>
                 </form>
+                <button>
+                    <Link to="/">Login</Link>
+                </button>
             </div>
         )
     }

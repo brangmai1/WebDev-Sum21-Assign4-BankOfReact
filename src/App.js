@@ -6,7 +6,7 @@ import Home from './components/Home';
 import UserProfile from './components/UserProfile';
 import Debits from './components/debits';
 import Credits from './components/credits';
-import LogIn from './Login';
+import LogIn from './components/Login';
 
 class App extends Component {
   constructor() {
