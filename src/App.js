@@ -1,9 +1,11 @@
 // src/App.js
 
 import React, {Component} from 'react';
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import Home from './components/Home';
 import UserProfile from './components/UserProfile';
+import Debits from './components/debits';
+import Credits from './components/credits';
 import LogIn from './Login';
 
 class App extends Component {
@@ -18,23 +20,28 @@ class App extends Component {
       }
     }
   }
-  mockLogIn = (logInInfo) => {
-    const newUser = {...this.state.currentUser}
-    newUser.userName = logInInfo.userName
-    this.setState({currentUser: newUser})
-  }
-
+  
   render() {
-    
-    // const homeComponent = () => (
-    //   <Home accountBalance={this.state.accountBalance} /> 
-    // );
 
-    // const userProfileComponent = () => (
-    //   <UserProfile 
-    //     userName={this.state.currentUser.userName} 
-    //     memberSince={this.state.currentUser.memberSince} 
-    //   /> 
+    const mockLogIn = (logInInfo) => {
+      const newUser = {...this.state.currentUser}
+      newUser.userName = logInInfo.userName
+      this.setState({currentUser: newUser})
+    }  
+ 
+    const homeComponent = () => (
+      <Home accountBalance={this.state.accountBalance} /> 
+    );
+
+    const userProfileComponent = () => (
+      <UserProfile 
+        userName={this.state.currentUser.userName} 
+        memberSince={this.state.currentUser.memberSince} 
+      /> 
+    );
+
+    // const debitsComponent = () => (
+    //   <Debits
     // );
 
     const logInComponent = () => (
@@ -42,15 +49,16 @@ class App extends Component {
     );
 
     return (
-      <Router>
-        <div>       
-          {/* <Route exact path="/" render={homeComponent} />
-          <Route exact path="/userProfile" render={userProfileComponent} /> */}
+      <Router>       
+        <div>             
+          <Route exact path="/" render={homeComponent} />
+          <Route exact path="/userProfile" render={userProfileComponent} />
           <Route exact path="/login" render={logInComponent} />
-        </div>
+        </div>        
       </Router>
     );    
   }
 }
+
 
 export default App;
