@@ -18,13 +18,14 @@ class Credits extends Component {
                 credits: response.data}));
     }
     addCredit(amount) {
-        <AccountBalance accountBalance={this.props.accountBalance - amount}/>
+        // <AccountBalance accountBalance={this.props.accountBalance - amount}/>
     }
     render () {
         return (
             <div>
                 <h1>Bank Of React</h1>
                 <h3>Credits Page</h3>
+               
             
                 <button>
                     <Link to="/userProfile">Back to User Profile</Link>
