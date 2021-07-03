@@ -13,7 +13,7 @@ class App extends Component {
     super();
 
     this.state = {
-      accountBalance: 14568.27,
+      accountBalance: 123456789.75,
       currentUser: {
         userName: 'Brang_Mai',
         memberSince: '06/20/2021',
@@ -37,12 +37,23 @@ class App extends Component {
       <UserProfile 
         userName={this.state.currentUser.userName} 
         memberSince={this.state.currentUser.memberSince} 
+        accountBalance={this.state.accountBalance}
       /> 
     );
 
-    // const debitsComponent = () => (
-    //   <Debits
-    // );
+    const debitsComponent = () => (
+      <Debits
+        userName={this.state.currentUser.userName} 
+        memberSince={this.state.currentUser.memberSince} 
+      /> 
+    );
+
+    const creditsComponent = () => (
+      <Credits
+        userName={this.state.currentUser.userName} 
+        memberSince={this.state.currentUser.memberSince} 
+      /> 
+    );
 
     const logInComponent = () => (
       <LogIn user={this.state.currentUser} mockLogIn={this.mockLogIn} />
@@ -54,6 +65,8 @@ class App extends Component {
           <Route exact path="/" render={homeComponent} />
           <Route exact path="/userProfile" render={userProfileComponent} />
           <Route exact path="/login" render={logInComponent} />
+          <Route exact path="/debits" render={debitsComponent} />
+          <Route exact path="/credits" render={creditsComponent} />
         </div>        
       </Router>
     );    

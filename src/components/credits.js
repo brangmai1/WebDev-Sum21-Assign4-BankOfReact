@@ -1,6 +1,7 @@
-// credits.js
+// src/components/credits.js
 
 import React, {Component}  from 'react';
+import UserProfile from './UserProfile';
 import {Link} from 'react-router-dom';
 
 class Credits extends Component {
@@ -13,7 +14,14 @@ class Credits extends Component {
     }
     render () {
         return (
-            <h1>Credits</h1>
+            <div>
+                <h1>Bank Of React</h1>
+                <h3>Credits Page</h3>
+            
+                <button>
+                    <Link to="/userProfile">Back to User Profile</Link>
+                </button> 
+            </div> 
         )
     }
 

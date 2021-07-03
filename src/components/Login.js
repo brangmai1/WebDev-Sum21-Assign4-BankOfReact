@@ -16,7 +16,7 @@ class LogIn extends Component {
             redirect: false
         }
     }
-
+    
     handleChange = (e) => {
         const updatedUser = {...this.state.user}
         const inputField = e.target.name 
@@ -38,9 +38,10 @@ class LogIn extends Component {
 
         return (
             <div>
+                <h1>Bank of React</h1>
                 <form onSubmit={this.handleSubmit}>
                     <div>
-                        <label htmlFor="userName">User Name</label>
+                        <label htmlFor="userName">Username</label>
                         <input 
                             type="text" name="userName" 
                             onChange={this.handleChange} 
@@ -53,7 +54,7 @@ class LogIn extends Component {
                     </div>
                 </form>
                 <button>
-                    <Link to="/">Login</Link>
+                    <Link to="/userProfile">Login</Link>
                 </button>
             </div>
         )

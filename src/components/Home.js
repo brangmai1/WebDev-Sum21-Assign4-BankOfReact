@@ -14,15 +14,8 @@ class Home extends Component {
                 <img src="bankPic.png" alt="Bank"/>
                 <h4>Welcome to</h4>
                 <h1>Bank of React</h1>
-
-                <button>
-                    <Link to="/userProfile">User Profile</Link>
-                </button>
-                <button>
-                    <Link to="/login">Log in</Link>
-                </button>
-
-                <AccountBalance accountBalance={this.props.accountBalance} />
+                <p>Home Page</p>
+                <button><Link to="/login">Login</Link></button>
             </div>
         );
     }
