@@ -3,14 +3,22 @@
 import React, {Component}  from 'react';
 import UserProfile from './UserProfile';
 import {Link} from 'react-router-dom';
+import axios from 'axios';
 
 class Credits extends Component {
-    constructor () {
-        super()
+    constructor (props) {
+        super(props)
         this.state = {
-            accountBalance: 0,
-            currentUser: ''
+            credits: []
         }
+    }
+    componentDidMount() {
+        axios.get('https://moj-api.herokuapp.com/credits')
+            .then(response => this.setState({
+                credits: response.data}));
+    }
+    addCredit(amount) {
+        <AccountBalance accountBalance={this.props.accountBalance - amount}/>
     }
     render () {
         return (
