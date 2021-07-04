@@ -29,23 +29,19 @@ class Debits extends Component{
         return (
             <div>
                 <h1>Bank of React</h1>
-                <h3>Debits Page</h3>
-                <div>
-                    <li>Account holder: </li>
-                    <li>Checking Account: $</li>             
-                    <li>Savings Account: $</li>
-                </div>
-                <div>
-                <ul>
-                    <button>
-                        <Link to="/userProfile">Back to User Profile</Link>
-                    </button>  
-                </ul> 
-                </div>         
-            </div>          
+            <h3>Debits Page</h3>
+            <div>
+                <li>Account holder: </li>
+                <li>Checking Account: $</li>             
+                <li>Savings Account: $</li>
+            </div>
+           
+            <button>
+                <Link to="/userProfile">Back to User Profile</Link>
+            </button>                      
+            </div>            
         );
-    }
-    
+    }    
 }
 
 export default Debits;
