@@ -30,13 +30,18 @@ class Debits extends Component{
             <div>
                 <h1>Bank of React</h1>
                 <h3>Debits Page</h3>
-                <p>Account holder: </p>
-                <p>Checking Account: $</p>
-                
-                <p>Savings Account: $</p>            
-                <button>
-                    <Link to="/userProfile">Back to User Profile</Link>
-                </button>  
+                <div>
+                    <li>Account holder: </li>
+                    <li>Checking Account: $</li>             
+                    <li>Savings Account: $</li>
+                </div>
+                <div>
+                <ul>
+                    <button>
+                        <Link to="/userProfile">Back to User Profile</Link>
+                    </button>  
+                </ul> 
+                </div>         
             </div>          
         );
     }

@@ -15,7 +15,9 @@ class Home extends Component {
                 <h4>Welcome to</h4>
                 <h1>Bank of React</h1>
                 <p>Home Page</p>
-                <button><Link to="/login">Login</Link></button>
+                <ul>
+                    <button><Link to="/login">Login</Link></button>
+                </ul>                
             </div>
         );
     }

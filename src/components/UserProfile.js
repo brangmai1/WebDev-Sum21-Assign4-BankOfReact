@@ -17,16 +17,18 @@ class UserProfile extends Component {
                 <div>Username: {this.props.userName}</div>
                 <AccountBalance accountBalance={this.props.accountBalance} />
                 <div>Member Since: {this.props.memberSince}</div>
-                <botton>
-                    <Link to="/debits">Debits</Link>
-                </botton>
-                <botton>
-                    <Link to="/credits">Credits</Link>
-                </botton>
-                <button>
-                    <Link to="/">Return to Home</Link>
-                </button>
-                
+                <ul>
+                    <button>
+                        <Link to="/debits">Debits</Link> 
+                    </button>
+                    <button>           
+                        <Link to="/credits">Credits</Link>  
+                    </button>
+                    <button>          
+                        <Link to="/">Home</Link> 
+                    </button>
+                </ul>              
+                              
             </div>
         );
     }

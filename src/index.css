@@ -1,14 +1,18 @@
 
 
 body {
-  margin: 0px;
-  padding: 100px;
+  padding: 65px;
   text-align: center;
+  background-image: url("./components/images/lawn.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: rgb(247, 21, 21);
 }
 
 code {
@@ -17,6 +21,23 @@ code {
 }
 
 div {
-  background-color: rgb(27, 233, 174);
+  padding: 28px;
+}
+
+ul {
+  background-color: rgb(236, 229, 22);
+  background-attachment: fixed;
   padding: 25px;
+  margin: 0px;
+  width: 100%;
+}
+
+button {
+  margin: 0;
+  padding: 5px 5px;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  display: inline-block;
+  margin-right: 10px;  
 }
