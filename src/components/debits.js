@@ -11,7 +11,8 @@ class Debits extends Component{
     constructor (props) {
         super(props) 
         this.state = {
-            debits: []
+            debits: [],
+            isLoaded: false,
         }
     }
     componentDidMount() {
@@ -27,10 +28,11 @@ class Debits extends Component{
     render () {
         return (
             <div>
-                <h1>Bank Of React</h1>
+                <h1>Bank of React</h1>
                 <h3>Debits Page</h3>
                 <p>Account holder: </p>
                 <p>Checking Account: $</p>
+                
                 <p>Savings Account: $</p>            
                 <button>
                     <Link to="/userProfile">Back to User Profile</Link>

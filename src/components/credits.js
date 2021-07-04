@@ -9,7 +9,8 @@ class Credits extends Component {
     constructor (props) {
         super(props)
         this.state = {
-            credits: []
+            credits: [],
+            isLoaded: false,
         }
     }
     componentDidMount() {
@@ -23,7 +24,7 @@ class Credits extends Component {
     render () {
         return (
             <div>
-                <h1>Bank Of React</h1>
+                <h1>Bank of React</h1>
                 <h3>Credits Page</h3>
                
             
