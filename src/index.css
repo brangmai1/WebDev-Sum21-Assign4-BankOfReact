@@ -1,4 +1,4 @@
-
+/* src/index.css */
 
 body {
   padding: 65px;
@@ -21,15 +21,20 @@ code {
 }
 
 div {
-  padding: 28px;
+  padding: 28px;  
 }
 
 ul {
-  background-color: rgb(236, 229, 22);
+  background-color: rgb(210, 238, 148);
   background-attachment: fixed;
   padding: 25px;
   margin: 0px;
   width: 100%;
+}
+li {
+  list-style: none;
+  color: black;
+  text-align: left;
 }
 
 button {

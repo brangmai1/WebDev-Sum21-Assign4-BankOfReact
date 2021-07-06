@@ -13,7 +13,6 @@ class UserProfile extends Component {
             <div>
                 <h1>Bank of React</h1>
                 <h3>User Profile</h3>
-
                 <div>
                     Username: {this.props.userName}
                     <AccountBalance accountBalance={this.props.accountBalance} />
