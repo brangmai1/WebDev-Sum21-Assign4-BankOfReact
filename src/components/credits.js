@@ -1,49 +1,4 @@
 // src/components/credits.js
-
-// import React, {Component}  from 'react';
-// import UserProfile from './UserProfile';
-// import {Link} from 'react-router-dom';
-// import axios from 'axios';
-
-// class Credits extends Component {
-//     constructor (props) {
-//         super(props)
-//         this.state = {
-//             credits: [],
-//             isLoaded: false,
-//         }
-//     }
-//     componentDidMount() {
-//         axios.get('https://moj-api.herokuapp.com/credits')
-//             .then(response => this.setState({
-//                 credits: response.data}));
-//     }
-//     addCredit(amount) {
-//         // <AccountBalance accountBalance={this.props.accountBalance - amount}/>
-//     }
-//     render () {
-//         return (
-//             <div class="credit-info">
-//                 <h1>Bank of React</h1>
-//                 <h3>Credits Page</h3>
-//                 <div class="credit-info-items">     
-//                     <li>Account holder's ID: ${}</li>
-//                     <li>Description: ${}</li>             
-//                     <li>Amount: ${}</li>
-//                     <li>Date: ${}</li>
-//                 </div>            
-//                 <button>
-//                     <Link to="/userProfile">Back to User Profile</Link>
-//                 </button> 
-//             </div> 
-//         )
-//     }
-
-// }
-
-// export default Credits;
-
-// export default Debits;
 import React, {Component, useState, useEffect} from 'react';
 import UserProfile from './UserProfile';
 import AccountBalance from './AccountBalance';
@@ -87,4 +42,42 @@ function Credits() {
         </div>
     );
 }
+
+
+// class Credits extends Component {
+//     constructor (props) {
+//         super(props)
+//         this.state = {
+//             credits: [],
+//             isLoaded: false,
+//         }
+//     }
+//     componentDidMount() {
+//         axios.get('https://moj-api.herokuapp.com/credits')
+//             .then(response => this.setState({
+//                 credits: response.data}));
+//     }
+//     addCredit(amount) {
+//         // <AccountBalance accountBalance={this.props.accountBalance - amount}/>
+//     }
+//     render () {
+//         return (
+//             <div class="credit-info">
+//                 <h1>Bank of React</h1>
+//                 <h3>Credits Page</h3>
+//                 <div class="credit-info-items">     
+//                     <li>Account holder's ID: ${}</li>
+//                     <li>Description: ${}</li>             
+//                     <li>Amount: ${}</li>
+//                     <li>Date: ${}</li>
+//                 </div>            
+//                 <button>
+//                     <Link to="/userProfile">Back to User Profile</Link>
+//                 </button> 
+//             </div> 
+//         )
+//     }
+
+// }
+
 export default Credits;
