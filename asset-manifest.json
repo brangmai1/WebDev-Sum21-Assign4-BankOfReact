@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/WebDev-Sum21-Assign4-BankOfReact/static/css/main.e561277f.chunk.css",
+    "main.js": "/WebDev-Sum21-Assign4-BankOfReact/static/js/main.5d41ef73.chunk.js",
+    "main.js.map": "/WebDev-Sum21-Assign4-BankOfReact/static/js/main.5d41ef73.chunk.js.map",
+    "runtime-main.js": "/WebDev-Sum21-Assign4-BankOfReact/static/js/runtime-main.d7f20088.js",
+    "runtime-main.js.map": "/WebDev-Sum21-Assign4-BankOfReact/static/js/runtime-main.d7f20088.js.map",
+    "static/js/2.99ea66bf.chunk.js": "/WebDev-Sum21-Assign4-BankOfReact/static/js/2.99ea66bf.chunk.js",
+    "static/js/2.99ea66bf.chunk.js.map": "/WebDev-Sum21-Assign4-BankOfReact/static/js/2.99ea66bf.chunk.js.map",
+    "static/js/3.469219d4.chunk.js": "/WebDev-Sum21-Assign4-BankOfReact/static/js/3.469219d4.chunk.js",
+    "static/js/3.469219d4.chunk.js.map": "/WebDev-Sum21-Assign4-BankOfReact/static/js/3.469219d4.chunk.js.map",
+    "index.html": "/WebDev-Sum21-Assign4-BankOfReact/index.html",
+    "static/css/main.e561277f.chunk.css.map": "/WebDev-Sum21-Assign4-BankOfReact/static/css/main.e561277f.chunk.css.map",
+    "static/js/2.99ea66bf.chunk.js.LICENSE.txt": "/WebDev-Sum21-Assign4-BankOfReact/static/js/2.99ea66bf.chunk.js.LICENSE.txt",
+    "static/media/bankPic.dc8dcbb8.png": "/WebDev-Sum21-Assign4-BankOfReact/static/media/bankPic.dc8dcbb8.png",
+    "static/media/index.css": "/WebDev-Sum21-Assign4-BankOfReact/static/media/lawn.90fe7e45.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d7f20088.js",
+    "static/js/2.99ea66bf.chunk.js",
+    "static/css/main.e561277f.chunk.css",
+    "static/js/main.5d41ef73.chunk.js"
+  ]
+}
