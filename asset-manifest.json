@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/WebDev-Sum21-Assign4-BankOfReact/static/css/main.e561277f.chunk.css",
-    "main.js": "/WebDev-Sum21-Assign4-BankOfReact/static/js/main.513ba331.chunk.js",
-    "main.js.map": "/WebDev-Sum21-Assign4-BankOfReact/static/js/main.513ba331.chunk.js.map",
+    "main.js": "/WebDev-Sum21-Assign4-BankOfReact/static/js/main.f492b906.chunk.js",
+    "main.js.map": "/WebDev-Sum21-Assign4-BankOfReact/static/js/main.f492b906.chunk.js.map",
     "runtime-main.js": "/WebDev-Sum21-Assign4-BankOfReact/static/js/runtime-main.0d74e70f.js",
     "runtime-main.js.map": "/WebDev-Sum21-Assign4-BankOfReact/static/js/runtime-main.0d74e70f.js.map",
     "static/js/2.f436a19a.chunk.js": "/WebDev-Sum21-Assign4-BankOfReact/static/js/2.f436a19a.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.0d74e70f.js",
     "static/js/2.f436a19a.chunk.js",
     "static/css/main.e561277f.chunk.css",
-    "static/js/main.513ba331.chunk.js"
+    "static/js/main.f492b906.chunk.js"
   ]
 }
